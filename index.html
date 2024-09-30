@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="logo.jpg" type="image/png"> 
+    <title>Registration</title>
+</head>
+<body>
+    <form action="">
+        <div id="container">
+            <div id="logo">
+                <img src="logoo.jpg" alt="Logo">
+                <h1>Registration</h1>
+            </div>
+            <div id="InputArea">
+                <h2>Personal Information</h2>
+                <div class="PersonInfo">
+                    <label>Enter Firstname</label>
+                    <input type="text" id="fname" autocomplete="off" required>
+                </div>
+                <div class="PersonInfo">
+                    <label>Enter Middlename</label>
+                    <input type="text" id="mname" autocomplete="off" required>
+                </div>
+                <div class="PersonInfo">
+                    <label>Enter Lastname</label>
+                    <input type="text" id="lname" autocomplete="off" required>
+                </div>  
+                <div class="PersonInfo">
+                    <label for="suffix">Select Suffix:</label>
+                    <select id="suffix" required>
+                        <option value="" disabled selected>Select a suffix</option>
+                        <option value="none">None</option>
+                        <option value="jr">Jr.</option>
+                        <option value="sr">Sr.</option>
+                        <option value="II">II</option>
+                        <option value="III">III</option>
+                        <option value="IV">IV</option>
+                        <option value="V">V</option>
+                    </select>
+                </div>
+                <div class="PersonInfo">
+                    <label for="birthdate">Enter Birthdate:</label>
+                    <input type="date" id="birthdate" required>
+                </div>
+                <div class="PersonInfo">
+                    <label for="email">Enter Email Address:</label>
+                    <input type="email" id="email" autocomplete="off" required>
+                </div>
+                <div class="PersonInfo">
+                    <label for="username">Enter Username:</label>
+                    <input type="text" id="username" autocomplete="off" required>
+                </div>
+                <div class="PersonInfo">
+                    <label for="password">Enter Password:</label>
+                    <input type="password" id="password" required>
+                </div>
+            </div>
+  
+            <div class="Submit/res">
+                <input type="submit" value="Register" id="submitBtn">
+                <input type="reset" value="Cancel" id="cancelBtn">
+            </div>
+        </div>
+    </form>
+</body>
+</html>
